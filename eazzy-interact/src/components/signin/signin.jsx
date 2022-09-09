@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import './signin.css'
 import logo from './logo.jpeg'
 import google from './google.png'
@@ -8,6 +8,10 @@ import { Link } from "react-router-dom";
 
 export const SignIn = () =>{
 
+    const [data, setData] = useState("false")
+    const yes = () =>{
+        setData(data)
+    }
     return(
         <div id="signinContent">
             <div id="signinHeader">
